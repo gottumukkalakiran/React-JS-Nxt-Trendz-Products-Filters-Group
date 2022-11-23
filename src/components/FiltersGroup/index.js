@@ -21,8 +21,8 @@ const FiltersGroup = props => {
         >
           <img
             src={rating.imageUrl}
-            alt={`rating-${rating.ratingId}`}
-            className="rating-image"
+            alt={`rating ${rating.ratingId}`}
+            className="rating-img"
           />
           <p className={ratingClassName}>& up</p>
         </li>
@@ -81,6 +81,7 @@ const FiltersGroup = props => {
 
   const renderSearchInput = () => {
     const {searchInput} = props
+
     return (
       <div className="search-input-container">
         <input
